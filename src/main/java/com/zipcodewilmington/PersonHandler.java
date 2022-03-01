@@ -16,19 +16,18 @@ public class PersonHandler {
         int counter = 0;
 
         // while `counter` is less than length of array
-            // begin loop
-        while (counter < personArray.length){
+        // begin loop
+        while (counter < personArray.length) {
             result += personArray[counter];
             counter++;
         }
-                // use `counter` to identify the `current Person` in the array
-                // get `string Representation` of `currentPerson`
-                // append `stringRepresentation` to `result` variable
+        // use `counter` to identify the `current Person` in the array
+        // get `string Representation` of `currentPerson`
+        // append `stringRepresentation` to `result` variable
 
-            // end loop
+        // end loop
         return result;
     }
-
 
 
     public String forLoop() {
@@ -38,37 +37,34 @@ public class PersonHandler {
         // identify increment
 
         // use the above clauses to declare for-loop signature
-            // begin loop
-        for (int i = 0; i < personArray.length; i++){
+        // begin loop
+        for (int i = 0; i < personArray.length; i++) {
+            // use `counter` to identify the `current Person` in the array
+            // get `string Representation` of `currentPerson`
+            // append `stringRepresentation` to `result` variable
+            // end loop
             result += personArray[i];
-
         }
-                // use `counter` to identify the `current Person` in the array
-                // get `string Representation` of `currentPerson`
-                // append `stringRepresentation` to `result` variable
-            // end loop
-
         return result;
     }
 
+        public String forEachLoop () {
+            String result = "";
+            // identify array's type
+            // identify array's variable-name
 
-
-    public String forEachLoop() {
-        String result = "";
-        // identify array's type
-        // identify array's variable-name
-
-        // use the above discoveries to declare for-each-loop signature
+            // use the above discoveries to declare for-each-loop signature
             // begin loop
-                // get `string Representation` of `currentPerson`
-                // append `stringRepresentation` to `result` variable
+            // get `string Representation` of `currentPerson`
+            // append `stringRepresentation` to `result` variable
             // end loop
-
-        return result;
+            for (Person i : personArray) {
+                result += i;
+            }
+                return result;
+            }
+        public Person[] getPersonArray () {
+                return personArray;
+        }
     }
 
-
-    public Person[] getPersonArray() {
-        return personArray;
-    }
-}
