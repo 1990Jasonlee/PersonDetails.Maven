@@ -39,6 +39,10 @@ public class PersonHandler {
 
         // use the above clauses to declare for-loop signature
             // begin loop
+        for (int i = 0; i < personArray.length; i++){
+            result += personArray[i];
+
+        }
                 // use `counter` to identify the `current Person` in the array
                 // get `string Representation` of `currentPerson`
                 // append `stringRepresentation` to `result` variable
